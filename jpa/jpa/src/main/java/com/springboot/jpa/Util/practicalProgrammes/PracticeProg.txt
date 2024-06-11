@@ -1,0 +1,71 @@
+Prog1
+String reverse without predefined method
+
+public class StringReverse {
+    public static void main(String[] args) {
+        String original = "Hello, World!";
+        String reversed = reverseString(original);
+        System.out.println("Reversed string: " + reversed);
+    }
+    
+    public static String reverseString(String str) {
+        // Check if the string is null or empty
+        if (str == null || str.isEmpty()) {
+            return str;
+        }
+        
+        // Initialize an empty string to store the reversed string
+        String reversed = "";
+        
+        // Iterate through the characters of the original string in reverse order
+        for (int i = str.length() - 1; i >= 0; i--) {
+            // Append each character to the reversed string
+            reversed += str.charAt(i);
+        }
+        
+        return reversed;
+    }
+}
+
+
+
+
+prog2
+fibnoci with recursion and without recursion
+
+
+prog3
+convert class to singleton
+
+public class Singleton {
+    // Private static instance variable to hold the single instance of the class
+    private static Singleton instance;
+
+    // Private constructor to prevent instantiation from outside the class
+    private Singleton() {
+        // Constructor implementation
+    }
+
+    // Public static method to provide access to the single instance of the class
+    public static Singleton getInstance() {
+        // Lazy initialization: create the instance if it doesn't exist
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    // Other methods and variables can be added as needed
+}
+
+
+
+
+pro4
+create a immutable class
+
+prog5
+Prime Numbers
+
+
+
